@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+.Fixed-Header
+{
+  display: flex;
+  justify-content: center;
+  background: #dcdcdc;
+  position: fixed;
+  top: 0;
+}
+
+#Header
+{
+  font-family: "Quicksand";
+  font-size: 24px;
+  color: grey;
+  text-decoration: underline #80008050;
+}
+
+#Header:hover { cursor: default; }
+
+#Buttons
+{
+  position: fixed;
+  right: 2%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 200px;
+}
+
+#Browse-Btn
+{
+  font-family: "Quicksand";
+  font-size: 15px;
+  background: #dcdcdc;
+  color: #80008099;
+  width: 100px;
+  height: 25px;
+  text-align: center;
+  border: none;
+  border-radius: 3px;
+  outline: none;
+}
+
+#Download-Btn
+{
+  font-family: "Quicksand";
+  font-size: 15px;
+  background: #dcdcdc;
+  color: #80008099;
+  width: 90px;
+  height: 25px;
+  text-align: center;
+  border: none;
+  border-radius: 3px;
+  outline: none;
+}
+
+#Browse-Btn:hover
+{
+  background: #80008050;
+  color: #dcdcdc;
+}
+
+#Download-Btn:hover
+{
+  background: #80008050;
+  color: #dcdcdc;
+}
+
+#Content
+{
+  background: white;
+  width: 100%;
+  height: 100%;
+  margin-top: 50px;
+}
+
+#Form
+{
+  background: white;
+  padding-top: 20px;
+  margin-bottom: 20px;
+}
+
+#Output { margin-bottom: 20px; }
+
+#Logo
+{
+  position: fixed;
+  left: 2%;
+  width: 30px;
+  height: 30px;
+}

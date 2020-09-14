@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+#Content
+{
+  display: flex;
+  justify-content: center;
+  height: 100%;
+}
+
+#Text-Area
+{
+  width: 80%;
+  height: fit-content;
+  margin-top: 25px;
+  text-align: left;
+  font-family: "Quicksand";
+  font-size: 15px;
+  color: grey;
+  resize: none;
+  border: none;
+  outline: none;
+}

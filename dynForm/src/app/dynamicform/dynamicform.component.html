@@ -1,0 +1,25 @@
+<form id="Container" *ngIf="TheForm">
+    <div class="Column">
+      <div class="Row-Center"><label id="Title">{{TheForm.Title}}</label></div>
+      <div *ngFor="let Field of TheForm.Fields">
+        <div [ngSwitch]="Field.Type">
+          <div class="Row-SB" *ngSwitchCase="'Text'">
+            <label class="Label">{{Field.Label}}</label>
+            <input class="Text-Input" [placeholder]="Field.Placeholder" [id]="Field.ID">
+          </div>
+          <div class="Row-SB" *ngSwitchCase="'Color'">
+            <label class="Label">{{Field.Label}}</label>
+            <input class="Color-Input" type="color" value="#dcdcdc" [id]="Field.ID">
+          </div>
+          <div class="Row-SB" *ngSwitchCase="'Date'">
+            <label class="Label">{{Field.Label}}</label>
+            <input class="Date-Input" type="date" [id]="Field.ID">
+          </div>
+        </div>
+      </div>
+      <div class="Row-Center">
+        <button type="submit" id="Submit-Btn">Submit</button>
+      </div>
+    </div>
+</form>
+

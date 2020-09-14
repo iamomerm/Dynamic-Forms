@@ -1,0 +1,22 @@
+<mat-toolbar [ngStyle]="{'height':'50px'}" class="Fixed-Header">
+  <h1 id="Header">Dynamic Forms</h1>
+  <div id="Buttons"><!-- Download -->
+    <button id="Download-Btn" (click)="Download()">Download</button>
+    <!-- Browse -->
+    <button id="Browse-Btn">
+      <label [ngStyle]="{'width':'100%','height':'100%'}">Browse
+        <input #FileBrowser type="file" style="display: none" accept=".json" multiple="false" (change)="BrowseFile()">
+      </label>
+    </button>
+  </div>
+  <img id="Logo" src="../assets/Icon.png">
+</mat-toolbar>
+<div id="Content" *ngIf="File">
+  <div id="Form" >
+    <app-dynamicform [File]="File"></app-dynamicform>
+  </div>
+  <hr style="border: 1px solid #dcdcdc">
+  <div id="Output">
+    <app-output [File]="File"></app-output>
+  </div>
+</div>

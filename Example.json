@@ -1,0 +1,20 @@
+{
+	"Title":"Example",
+	"Fields":[
+		{
+			"Type":"Text",
+			"Placeholder":"Enter Text",
+			"Label":"Text",
+			"ID":"1"
+		},
+		{
+			"Type":"Color",
+			"Label":"Choose Color",
+			"ID":"2"
+		},
+		{
+			"Type":"Date",
+			"Label":"Select Date",
+			"ID":"3"
+		}]
+}
